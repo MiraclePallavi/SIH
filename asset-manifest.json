@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MiraclePallavi/SIH/static/css/main.6942d833.css",
+    "main.js": "/MiraclePallavi/SIH/static/js/main.93ca0d8c.js",
+    "static/js/453.4695a652.chunk.js": "/MiraclePallavi/SIH/static/js/453.4695a652.chunk.js",
+    "static/media/logo2.png": "/MiraclePallavi/SIH/static/media/logo2.62675e3527f5213f39ea.png",
+    "index.html": "/MiraclePallavi/SIH/index.html",
+    "main.6942d833.css.map": "/MiraclePallavi/SIH/static/css/main.6942d833.css.map",
+    "main.93ca0d8c.js.map": "/MiraclePallavi/SIH/static/js/main.93ca0d8c.js.map",
+    "453.4695a652.chunk.js.map": "/MiraclePallavi/SIH/static/js/453.4695a652.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6942d833.css",
+    "static/js/main.93ca0d8c.js"
+  ]
+}
