@@ -21,6 +21,13 @@ const OPDFlowOverview = () => {
     statusFilter === 'All' || patient.status === statusFilter
   );
 
+  // Example: Adding a new patient (this could be tied to a form or event)
+  const addPatient = () => {
+    const newPatient = { id: 4, name: 'Alex Johnson', status: 'Waiting', appointmentTime: '11:30 AM' };
+    setPatients([...patients, newPatient]);
+    setAlerts([...alerts, { id: 3, message: `New appointment added for ${newPatient.name} at ${newPatient.appointmentTime}.` }]);
+  };
+
   return (
     <section className="p-8">
       <h2 className="text-2xl font-bold mb-6">OPD Flow Overview</h2>
@@ -53,7 +60,7 @@ const OPDFlowOverview = () => {
       </div>
 
       {/* Alerts/Notifications */}
-      <div>
+      <div className="mb-8">
         <h3 className="font-bold text-lg mb-4">Alerts/Notifications</h3>
         <div className="bg-white p-4 shadow rounded">
           {alerts.length === 0 ? (
@@ -67,6 +74,14 @@ const OPDFlowOverview = () => {
           )}
         </div>
       </div>
+
+      {/* Example Button to Add Patient */}
+      <button
+        className="bg-blue-500 text-white py-2 px-4 rounded"
+        onClick={addPatient}
+      >
+        Add Patient
+      </button>
     </section>
   );
 };
