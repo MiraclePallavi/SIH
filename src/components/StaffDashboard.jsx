@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import OPDFlowOverview from './OPDFlowOverview';
 import PatientQueueManagement from './PatientQueueManagement';
-import PredictiveAnalytics from './PredictiveAnalytics'; // Assume this is another component
+import PredictiveAnalytics from './PredictiveAnalytics';
+import Header from './Header' // Assume this is another component
 
 const hospitals = [
   { id: 1, name: 'City Hospital', departments: ['Cardiology', 'Orthopedics', 'General'] },
   { id: 2, name: 'Metro Hospital', departments: ['Neurology', 'Pediatrics', 'General'] },
 ];
 
-const MainPage = () => {
+const StaffDashboard = () => {
   const [selectedHospital, setSelectedHospital] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('');
   const [filteredData, setFilteredData] = useState(null);
@@ -23,6 +24,8 @@ const MainPage = () => {
   };
 
   return (
+    <>
+    <Header />
     <section className="p-8">
       <h1 className="text-3xl font-bold mb-6">Hospital & Department Search</h1>
 
@@ -64,7 +67,10 @@ const MainPage = () => {
         <p>No matching hospital or department found. Please try again.</p>
       )}
     </section>
+    </>
   );
 };
 
-export default MainPage;
+export default StaffDashboard;
+
+

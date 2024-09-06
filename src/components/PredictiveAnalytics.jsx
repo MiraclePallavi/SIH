@@ -71,4 +71,3 @@ const PredictiveAnalytics = () => {
 };
 
 export default PredictiveAnalytics;
-
